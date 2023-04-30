@@ -5,7 +5,6 @@ Summary:    A new markup-based typesetting system that is powerful and easy to l
 
 License:    Apache-2.0
 URL:        https://github.com/typst/typst
-%undefine _disable_source_fetch
 Source0:    %{url}/archive/refs/tags/v%{version}.tar.gz
 
 ExclusiveArch: %{rust_arches}
@@ -15,8 +14,6 @@ BuildRequires: rust
 
 %description
 Typst is a new markup-based typesetting system that is designed to be as powerful as LaTeX while being much easier to learn and use.
-
-%global debug_package %{nil}
 
 %prep
 %autosetup
