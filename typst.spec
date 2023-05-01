@@ -1,3 +1,4 @@
+%global debug_package %{nil}
 Name:       typst
 Version:    0.3.0
 Release:    1%{dist}
@@ -7,10 +8,7 @@ License:    Apache-2.0
 URL:        https://github.com/typst/typst
 Source0:    %{url}/archive/refs/tags/v%{version}.tar.gz
 
-ExclusiveArch: %{rust_arches}
-
-BuildRequires: cargo
-BuildRequires: rust
+BuildRequires: rust-packaging >= 21
 
 %description
 Typst is a new markup-based typesetting system that is designed to be as powerful as LaTeX while being much easier to learn and use.
@@ -20,6 +18,9 @@ Typst is a new markup-based typesetting system that is designed to be as powerfu
 
 %build
 cargo build -p typst-cli --release --all-features
+
+%check
+%{cargo_test}
 
 %install
 install -d -m 0755 %{buildroot}%{_bindir}
