@@ -1,6 +1,6 @@
 %global debug_package %{nil}
 Name:       typst
-Version:    0.5.0
+Version:    0.6.0
 Release:    1%{dist}
 Summary:    A new markup-based typesetting system that is powerful and easy to learn.
 
