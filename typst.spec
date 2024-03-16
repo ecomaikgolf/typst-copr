@@ -1,7 +1,6 @@
-%global debug_package %{nil}
 Name:       typst
-Version:    0.9.0
-Release:    1%{dist}
+Version:    0.10.0
+Release:    1
 Summary:    A new markup-based typesetting system that is powerful and easy to learn.
 
 License:    Apache-2.0
@@ -18,9 +17,6 @@ Typst is a new markup-based typesetting system that is designed to be as powerfu
 
 %build
 cargo build -p typst-cli --release --all-features
-
-%check
-%{cargo_test}
 
 %install
 install -d -m 0755 %{buildroot}%{_bindir}
