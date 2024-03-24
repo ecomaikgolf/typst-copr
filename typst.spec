@@ -1,13 +1,14 @@
-Name:       typst
-Version:    0.11.0
-Release:    1
-Summary:    A new markup-based typesetting system that is powerful and easy to learn.
-
 License:    Apache-2.0
 URL:        https://github.com/typst/typst
 Source0:    %{url}/archive/refs/tags/v%{version}.tar.gz
 
 BuildRequires: rust-packaging >= 21
+BuildRequires: openssl 
+BuildRequires: openssl-libs
+BuildRequires: perl
+BuildRequires: openssl-devel
+BuildRequires: pkg-config
+BuildRequires: perl-FindBin
 
 %description
 Typst is a new markup-based typesetting system that is designed to be as powerful as LaTeX while being much easier to learn and use.
