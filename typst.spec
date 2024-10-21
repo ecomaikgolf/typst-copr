@@ -13,7 +13,7 @@ BuildRequires: openssl-libs
 BuildRequires: perl
 
 %description
-Typst is a new markup-based typesetting system that is designed to be as powerful as LaTeX while being much easier to learn and use.
+A new markup-based typesetting system that is powerful and easy to learn.
 
 %prep
 %autosetup
