@@ -15,20 +15,25 @@ BuildRequires: perl
 %description
 A new markup-based typesetting system that is powerful and easy to learn.
 
+
 %prep
 %autosetup
 
+
 %build
 cargo build -p typst-cli --release --all-features --locked
+
 
 %install
 install -d -m 0755 %{buildroot}%{_bindir}
 install -m 0755 target/release/typst %{buildroot}%{_bindir}/%{name}
 
+
 %files
 %license LICENSE
 %doc README.md
 %{_bindir}/%{name}
+
 
 %changelog
 %autochangelog
