@@ -7,7 +7,11 @@ License:    Apache-2.0
 URL:        https://github.com/typst/typst
 Source0:    %{url}/archive/refs/tags/v%{version}.tar.gz
 
+%if 1%{?rhel}
+BuildRequires: rust-toolset
+%else
 BuildRequires: rust-packaging
+%endif
 BuildRequires: openssl 
 BuildRequires: openssl-libs
 BuildRequires: perl
@@ -39,4 +43,8 @@ install -m 0755 target/release/typst %{buildroot}%{_bindir}/%{name}
 %changelog
 * Mon Oct 21 2024 Ernesto Martínez <me@ecomaikgolf.com>
 
-- Removed %autorelease and %autochangelog due to RHEL 8,9 and OpenSUSE builds
+- Added rhel-based build support
+
+* Mon Oct 21 2024 Ernesto Martínez <me@ecomaikgolf.com>
+
+- Removed autorelease and autochangelog due to RHEL 8,9 and OpenSUSE builds
