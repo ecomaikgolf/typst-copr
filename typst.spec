@@ -19,7 +19,7 @@ A new markup-based typesetting system that is powerful and easy to learn.
 %autosetup
 
 %build
-cargo build -p typst-cli --release --all-features
+cargo build -p typst-cli --release --all-features --locked
 
 %install
 install -d -m 0755 %{buildroot}%{_bindir}
