@@ -7,10 +7,11 @@ License:    Apache-2.0
 URL:        https://github.com/typst/typst
 Source0:    %{url}/archive/refs/tags/v%{version}.tar.gz
 
-BuildRequires: rust-packaging >= 21
+BuildRequires: rust-packaging
 BuildRequires: openssl 
 BuildRequires: openssl-libs
 BuildRequires: perl
+
 
 %description
 A new markup-based typesetting system that is powerful and easy to learn.
