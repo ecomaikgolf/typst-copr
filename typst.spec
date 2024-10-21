@@ -1,6 +1,6 @@
 Name:       typst
 Version:    0.12.0
-Release:    %autorelease
+Release:    2
 Summary:    A new markup-based typesetting system that is powerful and easy to learn.
 
 License:    Apache-2.0
@@ -37,4 +37,6 @@ install -m 0755 target/release/typst %{buildroot}%{_bindir}/%{name}
 
 
 %changelog
-%autochangelog
+* Mon Oct 21 2024 Ernesto Martínez <me@ecomaikgolf.com>
+
+- Removed %autorelease and %autochangelog due to RHEL 8,9 and OpenSUSE builds
