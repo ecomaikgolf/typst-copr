@@ -7,11 +7,9 @@ License:    Apache-2.0
 URL:        https://github.com/typst/typst
 Source0:    %{url}/archive/refs/tags/v%{version}.tar.gz
 
-%if 1%{?rhel}
-BuildRequires: rust-toolset
-%else
+%global debug_package %{nil}
+
 BuildRequires: rust-packaging
-%endif
 BuildRequires: openssl 
 BuildRequires: openssl-libs
 BuildRequires: perl
@@ -41,6 +39,11 @@ install -m 0755 target/release/typst %{buildroot}%{_bindir}/%{name}
 
 
 %changelog
+* Mon Oct 21 2024 Ernesto Martínez <me@ecomaikgolf.com>
+
+- Rollback rhel-based build support
+- Undefine debug_package macro
+
 * Mon Oct 21 2024 Ernesto Martínez <me@ecomaikgolf.com>
 
 - Added rhel-based build support
