@@ -1,17 +1,19 @@
 # typst
 
-Copr repository for typst: "A new markup-based typesetting system that is
-powerful and easy to learn".
+## Description
 
-No downstream patches, built with `cargo build -p typst-cli --release
---all-features --locked`.
+A new markup-based typesetting system that is powerful and easy to learn.
 
-Upstream: https://github.com/typst/typst
+No downstream patches, built with `cargo build -p typst-cli --release --all-features --locked`, respecting upstream Cargo.lock
 
-## Installation
+## Installation Instructions
 
 ```
 dnf copr enable ecomaikgolf/typst 
 dnf update
 dnf install typst
 ```
+
+Create an issue [1] to mark package as outdated. Report typst related issues to upstream. Report package issues (rare) on [1] too.
+
+[1] https://github.com/ecomaikgolf/typst-copr
