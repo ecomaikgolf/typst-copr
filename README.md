@@ -10,7 +10,6 @@ No downstream patches, built with `cargo build -p typst-cli --release --all-feat
 
 ```
 dnf copr enable ecomaikgolf/typst 
-dnf update
 dnf install typst
 ```
 
