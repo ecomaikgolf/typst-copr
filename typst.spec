@@ -1,6 +1,6 @@
 Name:       typst
-Version:    0.12.0
-Release:    2
+Version:    0.13.0
+Release:    1
 Summary:    A new markup-based typesetting system that is powerful and easy to learn.
 
 License:    Apache-2.0
@@ -39,6 +39,10 @@ install -m 0755 target/release/typst %{buildroot}%{_bindir}/%{name}
 
 
 %changelog
+* Thu Feb 20 2025 Ernesto Martínez <me@ecomaikgolf.com>
+
+- typst 0.13.0
+
 * Mon Oct 21 2024 Ernesto Martínez <me@ecomaikgolf.com>
 
 - Rollback rhel-based build support
