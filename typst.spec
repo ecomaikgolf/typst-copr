@@ -1,11 +1,10 @@
 Name:          typst
-Version:       0.13.0
-Release:       2
+Version:       0.13.1
+Release:       1
 Summary:       A new markup-based typesetting system that is powerful and easy to learn.
 License:       Apache-2.0
 URL:           https://github.com/typst/typst
 Source0:       %{url}/archive/refs/tags/v%{version}.tar.gz
-Patch0:        pr5905.patch
 BuildRequires: rust-packaging
 BuildRequires: openssl 
 BuildRequires: openssl-libs
@@ -38,6 +37,11 @@ install -m 0755 target/release/typst %{buildroot}%{_bindir}/%{name}
 %{_bindir}/%{name}
 
 %changelog
+* Tue Mar 07 2025 Ernesto Martínez <me@ecomaikgolf.com>
+
+- typst 0.13.1
+- removed high CPU bug downstream patch as it got upstreamed
+
 * Tue Mar 03 2025 Ernesto Martínez <me@ecomaikgolf.com>
 
 - Patch PR 5905 which got merged but not released yet
