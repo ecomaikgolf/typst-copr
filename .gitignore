@@ -1,2 +1,4 @@
 *.tar.gz
 Makefile
+*.rpm
+results*/
