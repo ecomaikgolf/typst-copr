@@ -1,6 +1,6 @@
 Name:          typst
-Version:       0.13.1
-Release:       2
+Version:       0.14.0
+Release:       1
 Summary:       A new markup-based typesetting system that is powerful and easy to learn.
 License:       Apache-2.0
 URL:           https://github.com/typst/typst
@@ -67,6 +67,10 @@ install -Dpm 0644 crates/typst-cli/artifacts/%{name}-watch.1 -t %{buildroot}%{_m
 %{_mandir}/man1/%{name}-watch.1*
 
 %changelog
+* Sun Oct 26 2025 Ernesto Martínez <me@ecomaikgolf.com>
+
+- typst 0.14.0
+
 * Fri Sep 09 2025 Ernesto Martínez <me@ecomaikgolf.com>
 
 - added man pages
